@@ -1,0 +1,43 @@
+---
+title: "Study of the relationship between MPG and viehcle features"
+subtitle: "Developing Data Products Coursera Project"
+output: ioslides_presentation
+author: "Qingyu Li"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Dataset for this application
+
+The mtcars dataset:
+
+  - Extracted from the 1974 Motor Trend US magazine 
+  - Comprises fuel consumption and 10 aspects of automobile design and performance 
+  - 32 automobile models (1973–74 models)
+
+## Dataset Variables
+```{r}
+library(datasets)
+str(mtcars)
+```
+
+***
+```{r}
+summary(mtcars)
+```
+
+
+## Advantage of this Shiny App
+
+- Easy to use drop down menu of the features
+- Visualize the relationship between MPG and features using Boxplot
+- Use regression to test the significance of each feature
+- Regression results are availabe below regression plot
+
+## Other information
+- Documentation and github repository are in the other tabs
+
+
